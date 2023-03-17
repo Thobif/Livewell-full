@@ -5,7 +5,9 @@ import 'Login/OTPpage.dart';
 import 'query/insert.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
-void main() async{
+import 'Edit/profile.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp2());
@@ -22,12 +24,15 @@ class MyApp2 extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: Insert(),
+      home: SplashScreen(),
     );
   }
 }
 
 class HomePage extends StatefulWidget {
+  final String userKey;
+  HomePage({required this.userKey});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -69,6 +74,17 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.green,
         title: Text('Home'),
         centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.person),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfilePage()),
+              );
+            },
+          ),
+        ],
       ),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(

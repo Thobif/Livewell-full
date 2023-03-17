@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:abc/main.dart';
 
 class EighthPage extends StatefulWidget {
   final String name;
   final String gender;
   final int height;
   final int weight;
-  final List<bool> allergens;
-  final List<bool> diseases;
+  final Map<String, bool> allergens;
+  final Map<String, bool> diseases;
+  final int age;
 
   EighthPage({
     required this.name,
@@ -15,6 +18,7 @@ class EighthPage extends StatefulWidget {
     required this.weight,
     required this.allergens,
     required this.diseases,
+    required this.age,
   });
 
   _EighthPageState createState() => _EighthPageState();
@@ -24,6 +28,23 @@ class _EighthPageState extends State<EighthPage> {
   int _mealsPerDay = 1;
   int _activityLevel = 1;
   int _exerciseLevel = 1;
+
+  Future<String> _addUserToFirestore() async {
+    CollectionReference users = FirebaseFirestore.instance.collection('user');
+    DocumentReference documentReference = await users.add({
+      'name': widget.name,
+      'age': widget.age,
+      'gender': widget.gender,
+      'height': widget.height,
+      'weight': widget.weight,
+      'diseases': widget.diseases,
+      'allergens': widget.allergens,
+      'mealsPerDay': _mealsPerDay,
+      'activityLevel': _activityLevel,
+      'exerciseLevel': _exerciseLevel,
+    });
+    return documentReference.id;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -108,8 +129,14 @@ class _EighthPageState extends State<EighthPage> {
                 Center(
                   child: ElevatedButton(
                     child: Text('ยืนยัน'),
-                    onPressed: () {
-                      // จบโปรแกรม
+                    onPressed: () async {
+                      String userKey = await _addUserToFirestore();
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => HomePage(userKey: userKey)),
+                        (Route<dynamic> route) => false,
+                      );
                     },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.green),

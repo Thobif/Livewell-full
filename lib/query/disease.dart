@@ -6,38 +6,32 @@ class SeventhPage extends StatefulWidget {
   final String gender;
   final int height;
   final int weight;
-  final List<bool> allergens;
+  final int age;
+  final Map<String, bool> allergens;
+  final Map<String, bool> diseases; // ปรับปรุงตัวแปร diseases ที่นี่
 
   SeventhPage({
     required this.name,
     required this.gender,
     required this.height,
     required this.weight,
+    required this.age,
     required this.allergens,
+    required this.diseases, // ปรับปรุง diseases ในคอนสตรัคเตอร์
   });
   _SeventhPageState createState() => _SeventhPageState();
 }
 
+
 class _SeventhPageState extends State<SeventhPage> {
   bool _hasDisease = false;
-  List<bool> _diseases = List<bool>.filled(5, false);
-
-  String _getDiseaseName(int index) {
-    switch (index) {
-      case 0:
-        return 'โรคเบาหวาน';
-      case 1:
-        return 'โรคไต';
-      case 2:
-        return 'โรคเก๊าท์';
-      case 3:
-        return 'โรคหัวใจและหลอดเลือด';
-      case 4:
-        return 'ความดันโลหิตสูง';
-      default:
-        return '';
-    }
-  }
+  Map<String, bool> _diseases = {
+    'โรคเบาหวาน': false,
+    'โรคไต': false,
+    'โรคเก๊าท์': false,
+    'โรคหัวใจและหลอดเลือด': false,
+    'ความดันโลหิตสูง': false,
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -86,18 +80,19 @@ class _SeventhPageState extends State<SeventhPage> {
               ),
               if (_hasDisease)
                 Column(
-                  children: List<Widget>.generate(
-                    5,
-                    (index) => CheckboxListTile(
-                      title: Text(_getDiseaseName(index)),
-                      value: _diseases[index],
-                      onChanged: (bool? value) {
-                        setState(() {
-                          _diseases[index] = value!;
-                        });
-                      },
-                    ),
-                  ),
+                  children: _diseases.entries
+                      .map(
+                        (entry) => CheckboxListTile(
+                          title: Text(entry.key),
+                          value: entry.value,
+                          onChanged: (bool? value) {
+                            setState(() {
+                              _diseases[entry.key] = value!;
+                            });
+                          },
+                        ),
+                      )
+                      .toList(),
                 ),
               Center(
                 child: ElevatedButton(
@@ -111,6 +106,7 @@ class _SeventhPageState extends State<SeventhPage> {
                           gender: widget.gender,
                           height: widget.height,
                           weight: widget.weight,
+                          age: widget.age,
                           allergens: widget.allergens,
                           diseases: _diseases,
                         ),

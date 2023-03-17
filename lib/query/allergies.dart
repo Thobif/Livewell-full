@@ -19,32 +19,17 @@ class SixthPage extends StatefulWidget {
 
 class _SixthPageState extends State<SixthPage> {
   bool _hasAllergy = false;
-  List<bool> _allergens = List<bool>.filled(9, false);
-
-  String _getAllergenName(int index) {
-    switch (index) {
-      case 0:
-        return 'ไข่';
-      case 1:
-        return 'ปลา';
-      case 2:
-        return 'นม';
-      case 3:
-        return 'ถั่วเหลือง';
-      case 4:
-        return 'ถั่วลิสง';
-      case 5:
-        return 'แป้งสาลีและกลูเต็น';
-      case 6:
-        return 'สัตว์น้ำเปลือกแข็ง เช่น กุ้ง ปู หอย หมึก ฯลฯ';
-      case 7:
-        return 'ถั่วตระกูล Tree Nuts เช่น อัลมอนด์ วอลนัท มะม่วงหิมพานต์ แมคคาเดเมีย พิสตาชิโอ ฯลฯ';
-      case 8:
-        return 'ผักและผลไม้ อาจเกิดอาการแพ้ที่ริมฝีปากและในลำคอ';
-      default:
-        return '';
-    }
-  }
+  Map<String, bool> _allergens = {
+    'ไข่': false,
+    'ปลา': false,
+    'นม': false,
+    'ถั่วเหลือง': false,
+    'ถั่วลิสง': false,
+    'แป้งสาลีและกลูเต็น': false,
+    'สัตว์น้ำเปลือกแข็ง': false,
+    'ถั่วตระกูล Tree Nuts': false,
+    'ผักและผลไม้': false,
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -93,18 +78,19 @@ class _SixthPageState extends State<SixthPage> {
               ),
               if (_hasAllergy)
                 Column(
-                  children: List<Widget>.generate(
-                    9,
-                    (index) => CheckboxListTile(
-                      title: Text(_getAllergenName(index)),
-                      value: _allergens[index],
-                      onChanged: (bool? value) {
-                        setState(() {
-                          _allergens[index] = value!;
-                        });
-                      },
-                    ),
-                  ),
+                  children: _allergens.entries
+                      .map(
+                        (entry) => CheckboxListTile(
+                          title: Text(entry.key),
+                          value: entry.value,
+                          onChanged: (bool? value) {
+                            setState(() {
+                              _allergens[entry.key] = value!;
+                            });
+                          },
+                        ),
+                      )
+                      .toList(),
                 ),
               Center(
                 child: ElevatedButton(
@@ -118,7 +104,15 @@ class _SixthPageState extends State<SixthPage> {
                           gender: widget.gender,
                           height: widget.height,
                           weight: widget.weight,
+                          age: widget.age,
                           allergens: _allergens,
+                          diseases: {
+                            'โรคเบาหวาน': false,
+                            'โรคไต': false,
+                            'โรคเก๊าท์': false,
+                            'โรคหัวใจและหลอดเลือด': false,
+                            'ความดันโลหิตสูง': false,
+                          },
                         ),
                       ),
                     );

@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\Admin\Desktop\FT\TT\android\app\src\debug\AndroidManifest.xml:7:5-66
-15-->C:\Users\Admin\Desktop\FT\TT\android\app\src\debug\AndroidManifest.xml:7:22-64
+15-->C:\Users\Admin\Desktop\FT\live_well\android\app\src\debug\AndroidManifest.xml:7:5-66
+15-->C:\Users\Admin\Desktop\FT\live_well\android\app\src\debug\AndroidManifest.xml:7:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Admin\.gradle\caches\transforms-3\4a9da42da7989287787340e3f7e46327\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 16-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Admin\.gradle\caches\transforms-3\4a9da42da7989287787340e3f7e46327\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
@@ -60,37 +60,37 @@
 55            android:value="2" />
 56
 57        <service
-57-->[:firebase_auth] C:\Users\Admin\Desktop\FT\TT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+57-->[:firebase_auth] C:\Users\Admin\Desktop\FT\live_well\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 58            android:name="com.google.firebase.components.ComponentDiscoveryService"
-58-->[:firebase_auth] C:\Users\Admin\Desktop\FT\TT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+58-->[:firebase_auth] C:\Users\Admin\Desktop\FT\live_well\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 59            android:directBootAware="true"
 59-->[com.google.firebase:firebase-common:20.3.1] C:\Users\Admin\.gradle\caches\transforms-3\12b0452fbd13388bf80017ee17c8148e\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:34:13-43
 60            android:exported="false" >
 60-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Admin\.gradle\caches\transforms-3\4a9da42da7989287787340e3f7e46327\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:66:13-37
 61            <meta-data
-61-->[:firebase_auth] C:\Users\Admin\Desktop\FT\TT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+61-->[:firebase_auth] C:\Users\Admin\Desktop\FT\live_well\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 62                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-62-->[:firebase_auth] C:\Users\Admin\Desktop\FT\TT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+62-->[:firebase_auth] C:\Users\Admin\Desktop\FT\live_well\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 63                android:value="com.google.firebase.components.ComponentRegistrar" />
-63-->[:firebase_auth] C:\Users\Admin\Desktop\FT\TT\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+63-->[:firebase_auth] C:\Users\Admin\Desktop\FT\live_well\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 64            <meta-data
-64-->[:firebase_database] C:\Users\Admin\Desktop\FT\TT\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+64-->[:firebase_database] C:\Users\Admin\Desktop\FT\live_well\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 65                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
-65-->[:firebase_database] C:\Users\Admin\Desktop\FT\TT\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-127
+65-->[:firebase_database] C:\Users\Admin\Desktop\FT\live_well\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-127
 66                android:value="com.google.firebase.components.ComponentRegistrar" />
-66-->[:firebase_database] C:\Users\Admin\Desktop\FT\TT\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+66-->[:firebase_database] C:\Users\Admin\Desktop\FT\live_well\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 67            <meta-data
-67-->[:cloud_firestore] C:\Users\Admin\Desktop\FT\TT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+67-->[:cloud_firestore] C:\Users\Admin\Desktop\FT\live_well\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 68                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-68-->[:cloud_firestore] C:\Users\Admin\Desktop\FT\TT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+68-->[:cloud_firestore] C:\Users\Admin\Desktop\FT\live_well\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 69                android:value="com.google.firebase.components.ComponentRegistrar" />
-69-->[:cloud_firestore] C:\Users\Admin\Desktop\FT\TT\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+69-->[:cloud_firestore] C:\Users\Admin\Desktop\FT\live_well\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 70            <meta-data
-70-->[:firebase_core] C:\Users\Admin\Desktop\FT\TT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+70-->[:firebase_core] C:\Users\Admin\Desktop\FT\live_well\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 71                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-71-->[:firebase_core] C:\Users\Admin\Desktop\FT\TT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+71-->[:firebase_core] C:\Users\Admin\Desktop\FT\live_well\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[:firebase_core] C:\Users\Admin\Desktop\FT\TT\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+72-->[:firebase_core] C:\Users\Admin\Desktop\FT\live_well\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 73            <meta-data
 73-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Admin\.gradle\caches\transforms-3\4a9da42da7989287787340e3f7e46327\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
 74                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"

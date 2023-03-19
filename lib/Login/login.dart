@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:abc/main.dart';
-
-void main() {
-  runApp(MaterialApp(home: LoginPage()));
-}
+import 'package:abc/home/navber.dart';
+import 'package:abc/query/name.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -15,31 +13,36 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController _phoneNumberController = TextEditingController();
   String _errorMessage = '';
 
-Future<void> _verifyPhoneNumber(BuildContext context) async {
-  String phoneNumber = _phoneNumberController.text;
-  print("Phone number: $phoneNumber");
-
-  try {
-    CollectionReference users = FirebaseFirestore.instance.collection('user');
-    QuerySnapshot querySnapshot = await users.where('phone', isEqualTo: phoneNumber).get();
-
-    if (querySnapshot.docs.isNotEmpty) {
-      // หากมี key นี้ในฐานข้อมูล ส่งข้อมูลไปยังหน้า Homepage พร้อมกับ key
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => HomePage(userKey: phoneNumber)),
-      );
-    } else {
+  Future<void> _verifyPhoneNumber(BuildContext context) async {
+    String phoneNumber = _phoneNumberController.text;
+    if (phoneNumber.length != 10) {
+      // ตรวจสอบว่ามี 10 ตัวเลขหรือไม่
       setState(() {
-        _errorMessage = 'เบอร์มือถือไม่ถูกต้อง';
+        _errorMessage = 'คุณใส่เบอร์มือถือไม่ถูกต้อง';
       });
+      return;
     }
-  } catch (e) {
-    print("Error: $e");
+    try {
+      CollectionReference users = FirebaseFirestore.instance.collection('user');
+      DocumentSnapshot doc = await users.doc(phoneNumber).get();
+
+      if (doc.exists) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => HomePage(userKey: phoneNumber)),
+        );
+      } else {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => FirstPage(userKey: phoneNumber)),
+        );
+      }
+    } catch (e) {
+      print("Error: $e");
+    }
   }
-}
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -72,6 +75,7 @@ Future<void> _verifyPhoneNumber(BuildContext context) async {
                   child: TextField(
                     controller: _phoneNumberController,
                     keyboardType: TextInputType.number,
+                    maxLength: 10, // กำหนดจำนวนตัวเลขสูงสุดที่สามารถใส่ได้
                     decoration: InputDecoration(
                       hintText: 'เบอร์มือถือ',
                       prefixIcon: Icon(Icons.phone),

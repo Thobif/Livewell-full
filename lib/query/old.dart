@@ -6,12 +6,15 @@ class FifthPage extends StatefulWidget {
   final String gender;
   final int height;
   final int weight;
+  final String userKey;
 
   FifthPage(
       {required this.name,
       required this.gender,
       required this.height,
-      required this.weight});
+      required this.weight,
+      required this.userKey
+      });
 
   @override
   _FifthPageState createState() => _FifthPageState();
@@ -88,6 +91,7 @@ class _FifthPageState extends State<FifthPage> {
                           builder: (context) => SixthPage(
                               name: widget.name,
                               gender: widget.gender,
+                              userKey: widget.userKey,
                               height: widget.height,
                               weight: widget.weight,
                               age: _age.toInt()),

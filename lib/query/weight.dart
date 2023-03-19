@@ -5,8 +5,9 @@ class FourthPage extends StatefulWidget {
   final String name;
   final String gender;
   final int height;
+  final String userKey;
 
-  FourthPage({required this.name, required this.gender, required this.height});
+  FourthPage({required this.name, required this.gender, required this.height, required this.userKey});
 
   @override
   _FourthPageState createState() => _FourthPageState();
@@ -82,6 +83,7 @@ class _FourthPageState extends State<FourthPage> {
                         MaterialPageRoute(
                           builder: (context) => FifthPage(
                               name: widget.name,
+                              userKey: widget.userKey,
                               gender: widget.gender,
                               height: widget.height,
                               weight: _weight.toInt()),

@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 import 'other.dart';
+import 'fat.dart';
 
 class SeventhPage extends StatefulWidget {
   final String name;
   final String gender;
+  final String userKey;
   final int height;
   final int weight;
   final int age;
   final Map<String, bool> allergens;
   final Map<String, bool> diseases; // ปรับปรุงตัวแปร diseases ที่นี่
+  
 
   SeventhPage({
     required this.name,
+    required this.userKey,
     required this.gender,
     required this.height,
     required this.weight,
@@ -101,8 +105,9 @@ class _SeventhPageState extends State<SeventhPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => EighthPage(
+                        builder: (context) => FatPage(
                           name: widget.name,
+                          userKey: widget.userKey,
                           gender: widget.gender,
                           height: widget.height,
                           weight: widget.weight,

@@ -7,9 +7,12 @@ class SixthPage extends StatefulWidget {
   final String gender;
   final int height;
   final int weight;
+  final String userKey;
+
 
   SixthPage(
       {required this.age,
+      required this.userKey,
       required this.name,
       required this.gender,
       required this.height,
@@ -101,6 +104,7 @@ class _SixthPageState extends State<SixthPage> {
                       MaterialPageRoute(
                         builder: (context) => SeventhPage(
                           name: widget.name,
+                          userKey: widget.userKey,
                           gender: widget.gender,
                           height: widget.height,
                           weight: widget.weight,

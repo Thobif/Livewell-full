@@ -1,15 +1,54 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ProfilePage extends StatefulWidget {
+  final String userKey;
+  ProfilePage({required this.userKey});
+
   @override
   _ProfilePageState createState() => _ProfilePageState();
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  // คุณควรเพิ่มตัวแปรสำหรับเก็บข้อมูลต่าง ๆ ในโปรไฟล์ของผู้ใช้ที่นี่
+  String _userName = '';
+  String _gender = '';
+  int _age = 0;
+  int _weight = 0;
+  int _height = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _getUserData();
+  }
+
+  Future<void> _getUserData() async {
+    try {
+      DocumentSnapshot documentSnapshot = await FirebaseFirestore.instance
+          .collection('user')
+          .doc(widget.userKey)
+          .get();
+
+      if (documentSnapshot.exists) {
+        setState(() {
+          _userName = documentSnapshot.get('name');
+          _gender = documentSnapshot.get('gender');
+          _age = documentSnapshot.get('age');
+          _weight = documentSnapshot.get('weight');
+          _height = documentSnapshot.get('height');
+        });
+      } else {
+        print('User not found!');
+      }
+    } catch (e) {
+      print('Error retrieving user data: $e');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
+    final userKeyLast4Digits =
+        widget.userKey.substring(widget.userKey.length - 4);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
@@ -31,37 +70,27 @@ class _ProfilePageState extends State<ProfilePage> {
               Center(
                 child: Column(
                   children: [
-                    CircleAvatar(
-                      backgroundImage: AssetImage('assets/images/Screen.jpg'), // รูปภาพของผู้ใช้
-                      radius: 50,
-                    ),
                     SizedBox(height: 10),
                     Text(
-                      'User Name', // ชื่อผู้ใช้
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      _userName,
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
               ),
               SizedBox(height: 20),
-              // เพิ่มรายการเสนอเลือกข้อมูลที่คุณต้องการแก้ไขที่นี่
-              Text('เพศ', style: TextStyle(fontSize: 18)),
+              Text('เพศ: ${_gender == 'male' ? 'ผู้ชาย' : 'ผู้หญิง'}',
+                  style: TextStyle(fontSize: 18)),
               SizedBox(height: 10),
-              Text('อายุ', style: TextStyle(fontSize: 18)),
+              Text('อายุ: $_age', style: TextStyle(fontSize: 18)),
               SizedBox(height: 10),
-              Text('น้ำหนัก', style: TextStyle(fontSize: 18)),
+              Text('น้ำหนัก: $_weight', style: TextStyle(fontSize: 18)),
               SizedBox(height: 10),
-              Text('ส่วนสูง', style: TextStyle(fontSize: 18)),
+              Text('ส่วนสูง: $_height', style: TextStyle(fontSize: 18)),
               SizedBox(height: 10),
-              Text('เบอร์โทรศัพท์', style: TextStyle(fontSize: 18)),
-              SizedBox(height: 10),
-              Text('อีเมล', style: TextStyle(fontSize: 18)),
-              SizedBox(height: 10),
-              Text('น้ำหนักปัจจุบัน', style: TextStyle(fontSize: 18)),
-              SizedBox(height: 10),
-              Text('เป้าหมาย', style: TextStyle(fontSize: 18)),
-              SizedBox(height: 10),
-              Text('เป้าหมายต่อสัปดาห์', style: TextStyle(fontSize: 18)),
+              Text('เบอร์โทรศัพท์: ****$userKeyLast4Digits',
+                  style: TextStyle(fontSize: 18)),
               SizedBox(height: 10),
             ],
           ),

@@ -4,8 +4,9 @@ import 'weight.dart';
 class ThirdPage extends StatefulWidget {
   final String name;
   final String gender;
+  final String userKey;
 
-  ThirdPage({required this.name, required this.gender});
+  ThirdPage({required this.name, required this.gender,required this.userKey});
 
   @override
   _ThirdPageState createState() => _ThirdPageState();
@@ -87,6 +88,7 @@ class _ThirdPageState extends State<ThirdPage> {
                         MaterialPageRoute(
                           builder: (context) => FourthPage(
                               name: widget.name,
+                              userKey: widget.userKey,
                               gender: widget.gender,
                               height: _height.toInt()),
                         ),

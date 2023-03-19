@@ -3,8 +3,12 @@ import 'height.dart';
 
 class SecondPage extends StatefulWidget {
   final String name;
+  final String userKey;
 
-  SecondPage({required this.name});
+  SecondPage({
+    required this.name,
+    required this.userKey,
+    });
 
   @override
   _SecondPageState createState() => _SecondPageState();
@@ -94,7 +98,7 @@ class _SecondPageState extends State<SecondPage> {
                           context,
                           MaterialPageRoute(
                             builder: (context) =>
-                                ThirdPage(name: widget.name, gender: gender!),
+                                ThirdPage(name: widget.name,userKey: widget.userKey, gender: gender!),
                           ),
                         );
                       } else {

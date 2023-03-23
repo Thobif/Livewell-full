@@ -27,7 +27,7 @@ class _FifthPageState extends State<FifthPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Step 5: Your age'),
+        title: Text('ขั้นตอนที่ 5: ใส่อายุของคุณ'),
         backgroundColor: Colors.green,
       ),
       body: Stack(
@@ -48,14 +48,14 @@ class _FifthPageState extends State<FifthPage> {
                 Spacer(),
                 Center(
                   child: Text(
-                    'Your age',
+                    'อายุของคุณ',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
                 SizedBox(height: 10),
                 Center(
                   child: Text(
-                    '${_age.toInt()} years',
+                    '${_age.toInt()} ปี',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
@@ -76,14 +76,14 @@ class _FifthPageState extends State<FifthPage> {
                     },
                     activeColor: Colors.green,
                     inactiveColor: Colors.grey,
-                    label: '${_age.toInt()} years',
+                    label: '${_age.toInt()} ปี',
                     divisions: 119,
                   ),
                 ),
                 SizedBox(height: 20),
                 Center(
                   child: ElevatedButton(
-                    child: Text('Next'),
+                    child: Text('ต่อไป'),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -113,7 +113,7 @@ class _FifthPageState extends State<FifthPage> {
                 SizedBox(height: 50),
                 Center(
                   child: Text(
-                    'Step 5/8',
+                    'ขั้นตอนที่ 5/8',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),

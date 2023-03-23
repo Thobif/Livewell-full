@@ -38,7 +38,7 @@ class _SixthPageState extends State<SixthPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Step 6: Allergies'),
+        title: Text('ขั้นตอนที่ 6: อาการแพ้อาหารของคุณ'),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
@@ -97,7 +97,7 @@ class _SixthPageState extends State<SixthPage> {
                 ),
               Center(
                 child: ElevatedButton(
-                  child: Text('Next'),
+                  child: Text('ต่อไป'),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -136,7 +136,7 @@ class _SixthPageState extends State<SixthPage> {
               SizedBox(height: 50),
               Center(
                 child: Text(
-                  'Step 6/8',
+                  'ขั้นตอนที่ 6/8',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),

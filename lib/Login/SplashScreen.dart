@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Color(0xFF69C67E), // ตั้งค่าสีตามรหัสสี 16 หลัก
       body: Center(
         child: Image.asset(
           'assets/images/Screen.png', // ที่อยู่ของรูปภาพที่ต้องการแสดง

@@ -33,7 +33,7 @@ class ResultPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Results'),
+        
         backgroundColor: Colors.green,
       ),
       body: Center(
@@ -42,7 +42,7 @@ class ResultPage extends StatelessWidget {
           children: [
             // Display user's inputs and results here...
             ElevatedButton(
-              child: Text('Save'),
+              child: Text('บันทึก'),
               onPressed: () {
                 // Save the user's data
               },
@@ -55,7 +55,7 @@ class ResultPage extends StatelessWidget {
 }
 
 class FirstPage extends StatefulWidget {
-    final String userKey;
+  final String userKey;
   FirstPage({required this.userKey});
   @override
   _FirstPageState createState() => _FirstPageState();
@@ -68,7 +68,7 @@ class _FirstPageState extends State<FirstPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Step 1: Enter your name'),
+        title: Text('ขั้นตอนที่ 1: ใส่ชื่อของคุณ'),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
@@ -77,7 +77,7 @@ class _FirstPageState extends State<FirstPage> {
             Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/query1_1.jpg'),
+                  image: AssetImage('assets/images/query1.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -106,27 +106,30 @@ class _FirstPageState extends State<FirstPage> {
                   TextField(
                     controller: nameController,
                     decoration: InputDecoration(
-                      labelText: 'Name',
-                      hintText: 'Enter your name',
+                      labelText: 'ชื่อ',
+                      hintText: 'ใส่ชื่อของคุณ',
                       contentPadding: EdgeInsets.symmetric(vertical: 10),
                     ),
                   ),
                   SizedBox(height: 20),
                   Center(
                     child: ElevatedButton(
-                      child: Text('Next'),
+                      child: Text('ต่อไป'),
                       onPressed: () {
                         String name = nameController.text;
                         if (name.isNotEmpty) {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SecondPage(name: name,userKey: widget.userKey,),
+                              builder: (context) => SecondPage(
+                                name: name,
+                                userKey: widget.userKey,
+                              ),
                             ),
                           );
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text('Please enter your name')),
+                            SnackBar(content: Text('กรุณาใส่ชื่อของคุณ')),
                           );
                         }
                       },
@@ -147,7 +150,7 @@ class _FirstPageState extends State<FirstPage> {
                   SizedBox(height: 50),
                   Center(
                     child: Text(
-                      'Step 1/8',
+                      'ขั้นตอนที่ 1/8',
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),

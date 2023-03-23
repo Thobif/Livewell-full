@@ -21,7 +21,7 @@ class _SecondPageState extends State<SecondPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Step 2: Your gender'),
+        title: Text('ขั้นตอนที่ 2: ใส่เพศของคุณ'),
         backgroundColor: Colors.green,
       ),
       body: Stack(
@@ -42,7 +42,7 @@ class _SecondPageState extends State<SecondPage> {
                 Spacer(),
                 Center(
                   child: Text(
-                    'Your gender',
+                    'เพศของคุณ',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -64,7 +64,7 @@ class _SecondPageState extends State<SecondPage> {
                             color: gender == 'male' ? Colors.blue : Colors.grey,
                           ),
                         ),
-                        Text('Male')
+                        Text('ชาย')
                       ],
                     ),
                     Column(
@@ -82,7 +82,7 @@ class _SecondPageState extends State<SecondPage> {
                                 gender == 'female' ? Colors.pink : Colors.grey,
                           ),
                         ),
-                        Text('Female')
+                        Text('หญิง')
                       ],
                     ),
                   ],
@@ -90,7 +90,7 @@ class _SecondPageState extends State<SecondPage> {
                 SizedBox(height: 20),
                 Center(
                   child: ElevatedButton(
-                    child: Text('Next'),
+                    child: Text('ต่อไป'),
                     onPressed: () {
                       // Handle next button press
                       if (gender != null) {
@@ -104,7 +104,7 @@ class _SecondPageState extends State<SecondPage> {
                       } else {
                         // Show an error message if no gender is selected
                         ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Please select your gender')),
+                          SnackBar(content: Text('กรุณาเลือกเพศของคุณ')),
                         );
                       }
                     },
@@ -123,7 +123,7 @@ class _SecondPageState extends State<SecondPage> {
                 SizedBox(height: 50),
                 Center(
                   child: Text(
-                    'Step 2/8',
+                    'ขั้นตอนที่ 2/8',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),

@@ -19,7 +19,7 @@ class _ThirdPageState extends State<ThirdPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Step 3: Your height'),
+        title: Text('ขั้นตอนที่ 3: ใส่ส่วนสูงของคุณ'),
         backgroundColor: Colors.green,
       ),
       body: Stack(
@@ -40,14 +40,14 @@ class _ThirdPageState extends State<ThirdPage> {
                 Spacer(),
                 Center(
                   child: Text(
-                    'Your height',
+                    'ส่วนสูงของคุณ',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
                 SizedBox(height: 10),
                 Center(
                   child: Text(
-                    '${_height.toInt()} cm',
+                    '${_height.toInt()} เซนติเมตร',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
@@ -72,7 +72,7 @@ class _ThirdPageState extends State<ThirdPage> {
                         },
                         activeColor: Colors.green,
                         inactiveColor: Colors.grey,
-                        label: '${_height.toInt()} cm',
+                        label: '${_height.toInt()} เซนติเมตร',
                         divisions: 150,
                       ),
                     ),
@@ -81,7 +81,7 @@ class _ThirdPageState extends State<ThirdPage> {
                 SizedBox(height: 20),
                 Center(
                   child: ElevatedButton(
-                    child: Text('Next'),
+                    child: Text('ต่อไป'),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -109,7 +109,7 @@ class _ThirdPageState extends State<ThirdPage> {
                 SizedBox(height: 50),
                 Center(
                   child: Text(
-                    'Step 3/8',
+                    'ขั้นตอนที่ 3/8',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:abc/home/navber.dart';
+
 import 'package:abc/query/datataget.dart';
 
 class EighthPage extends StatefulWidget {
@@ -12,6 +12,7 @@ class EighthPage extends StatefulWidget {
   final Map<String, bool> diseases;
   final int age;
   final String userKey;
+  final int bodyFatPercentage;
 
   EighthPage({
     required this.name,
@@ -21,6 +22,7 @@ class EighthPage extends StatefulWidget {
     required this.allergens,
     required this.diseases,
     required this.age,
+    required this.bodyFatPercentage,
     required this.userKey,
   });
 
@@ -31,6 +33,7 @@ class _EighthPageState extends State<EighthPage> {
   int _mealsPerDay = 1;
   int _activityLevel = 1;
   int _exerciseLevel = 1;
+  
 
   Future<void> _addUserToFirestore() async {
     CollectionReference users = FirebaseFirestore.instance.collection('user');
@@ -43,6 +46,7 @@ class _EighthPageState extends State<EighthPage> {
       'weight': widget.weight,
       'diseases': widget.diseases,
       'allergens': widget.allergens,
+      'fat':widget.bodyFatPercentage,
       'mealsPerDay': _mealsPerDay,
       'activityLevel': _activityLevel,
       'exerciseLevel': _exerciseLevel,
@@ -53,7 +57,7 @@ class _EighthPageState extends State<EighthPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Step 8: Daily Activities'),
+          title: Text('ขั้นตอนที่ 8: ใส่กิจกรรมประจำวันของคุณ'),
           backgroundColor: Colors.green,
         ),
         body: SingleChildScrollView(

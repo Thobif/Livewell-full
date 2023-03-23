@@ -20,7 +20,7 @@ class _FourthPageState extends State<FourthPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Step 4: Your weight'),
+        title: Text('ขั้นตอนที่ 4: ใส่น้ำหนักของคุณ'),
         backgroundColor: Colors.green,
       ),
       body: Stack(
@@ -41,14 +41,14 @@ class _FourthPageState extends State<FourthPage> {
                 Spacer(),
                 Center(
                   child: Text(
-                    'Your weight',
+                    'น้ำหนักของคุณ',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
                 SizedBox(height: 10),
                 Center(
                   child: Text(
-                    '${_weight.toInt()} kg',
+                    '${_weight.toInt()} กิโลกรัม',
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
@@ -69,14 +69,14 @@ class _FourthPageState extends State<FourthPage> {
                     },
                     activeColor: Colors.green,
                     inactiveColor: Colors.grey,
-                    label: '${_weight.toInt()} kg',
+                    label: '${_weight.toInt()} กิโลกรัม',
                     divisions: 170,
                   ),
                 ),
                 SizedBox(height: 20),
                 Center(
                   child: ElevatedButton(
-                    child: Text('Next'),
+                    child: Text('ต่อไป'),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -105,7 +105,7 @@ class _FourthPageState extends State<FourthPage> {
                 SizedBox(height: 50),
                 Center(
                   child: Text(
-                    'Step 4/8',
+                    'ขั้นตอนที่ 4/8',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),

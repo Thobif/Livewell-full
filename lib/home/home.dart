@@ -1,3 +1,5 @@
+import 'package:abc/food/food_screen.dart';
+import 'package:abc/menu/menudetail.dart';
 import 'package:flutter/material.dart';
 import 'package:abc/Edit/profile.dart';
 import 'dart:math';
@@ -7,13 +9,14 @@ import 'package:abc/home/history2.dart';
 
 class HomeScreen extends StatefulWidget {
   final String userKey;
+
   HomeScreen({required this.userKey});
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomePageState extends State<HomeScreen> {
   String name = '';
   int TG_cal = 0;
   int TG_pro = 0;
@@ -140,7 +143,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("HomePageTest"),),
       body: Column(
+        
         children: [
           Padding(
             padding: const EdgeInsets.all(16.0),
@@ -182,11 +187,27 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   CustomPaint(
                     painter: CircularProgressPainter(PS_fat, PS_pro, PS_carb),
-                    child: Container(width: 200, height: 200),
+                    child: Container(width: 250, height: 250),
                   ),
-                  Text(
-                    '$R_cal/$TG_cal',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        '$R_cal/$TG_cal',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'kCal',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -263,6 +284,21 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => FoodScreen(
+                userKey: widget.userKey,
+              ),
+            ),
+          );
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.green,
+      ),
+      
     );
   }
 }

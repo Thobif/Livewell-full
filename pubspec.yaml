@@ -82,7 +82,6 @@ flutter:
   assets:
     - assets/images/
     - assets/fonts/
-    - assets/fonts/Manjari-Regular.ttf
     - assets/images/query1.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see

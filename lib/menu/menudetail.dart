@@ -1,31 +1,52 @@
+import 'targetmenu.dart';
 import 'package:flutter/material.dart';
 import 'package:abc/food/restaurantmodel.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
-import 'foodfunction.dart';
-
-class MenuDetailsPage extends StatefulWidget {
+class MenuDetail extends StatefulWidget {
+  final String userKey;
   final Restaurant restaurant;
 
-  MenuDetailsPage({required this.restaurant});
+  MenuDetail({required this.userKey, required this.restaurant});
 
   @override
-  _MenuDetailsPageState createState() => _MenuDetailsPageState();
+  _MenuDetailState createState() => _MenuDetailState();
 }
 
-class _MenuDetailsPageState extends State<MenuDetailsPage> {
-  late Future<List<Menu>> _menuItems;
+class _MenuDetailState extends State<MenuDetail> {
+  List<Map<String, dynamic>> _foodList = [];
+  QuerySnapshot? _querySnapshot;
 
   @override
   void initState() {
     super.initState();
-    _menuItems = fetchMenuItems(widget.restaurant);
+    getUserData();
   }
 
-
-  Future<List<Menu>> fetchMenuItems(Restaurant restaurant) async {
-    // โค้ดสำหรับดึงข้อมูลเมนูอาหารจาก Firestore โดยใช้ restaurant.id
-    // ในตัวอย่างนี้ควรเติมโค้ดดึงข้อมูลจาก Firestore ตามความต้องการ
-    return []; // คืนค่าเป็น List ของ MenuItem
+  void getUserData() async {
+    CollectionReference food = FirebaseFirestore.instance.collection('food');
+    DocumentReference restaurantRef = FirebaseFirestore.instance
+        .collection('shop')
+        .doc(widget.restaurant.key);
+    QuerySnapshot querySnapshot =
+        await food.where('shop', isEqualTo: restaurantRef).get();
+    if (querySnapshot.docs.isNotEmpty) {
+      List<Map<String, dynamic>> foodList = querySnapshot.docs
+          .map((doc) => {
+                'name': doc['name'].toString(),
+                'fat': doc['fat']?.toDouble() ?? 0.0,
+                'carb': doc['carb']?.toDouble() ?? 0.0,
+                'pro': doc['pro']?.toDouble() ?? 0.0,
+                'Kcal': doc['kcal']?.toDouble() ?? 0.0,
+              })
+          .toList();
+      setState(() {
+        _foodList = foodList;
+        _querySnapshot = querySnapshot;
+      });
+    } else {
+      print('User not found');
+    }
   }
 
   @override
@@ -33,34 +54,82 @@ class _MenuDetailsPageState extends State<MenuDetailsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.restaurant.name),
-        backgroundColor: Colors.green
       ),
-      body: FutureBuilder<List<Menu>>(
-        future: _menuItems,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(child: CircularProgressIndicator());
-          }
-          if (snapshot.hasError) {
-            return Center(
-                child: Text('เกิดข้อผิดพลาดในการดึงข้อมูลเมนูอาหาร'));
-          }
-          final menuItems = snapshot.data!;
-          return ListView.builder(
-            itemCount: menuItems.length,
-            itemBuilder: (context, index) {
-              return Card(
-                child: ListTile(
-                  title: Text(menuItems[index].name),
-                  subtitle: Text(
-                      'โปรตีน: ${menuItems[index].protein} กรัม\nคาโบไฮเดรต: ${menuItems[index].carbohydrate} กรัม\nไขมัน: ${menuItems[index].fat} กรัม\nแคลอรี: ${menuItems[index].calories} กิโลแคลอรี่'),
-                ),
-              );
-            },
-          );
-        },
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Expanded(
+              child: ListView.builder(
+                itemCount: _foodList.length,
+                itemBuilder: (context, index) {
+                  final food = _foodList[index];
+                  return ListTile(
+                    title: Text(food['name']),
+                    subtitle: Text(
+                        'Kcal: ${food['Kcal']}, Fat: ${food['fat']}, Carb: ${food['carb']}, Pro: ${food['pro']}'),
+                    onTap: () {
+                      if (_querySnapshot != null) {
+                        // เพิ่มเงื่อนไขเช็ค _querySnapshot ไม่เท่ากับ null
+                        int orderQuantity = 1; // default order quantity
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: Text('How many plates?'),
+                              content: Container(
+                                width: 150.0,
+                                height: 50.0,
+                                child: TextField(
+                                  keyboardType: TextInputType.number,
+                                  decoration: InputDecoration(
+                                      hintText: 'Enter quantity'),
+                                  onChanged: (value) {
+                                    orderQuantity = int.tryParse(value) ?? 1;
+                                  },
+                                ),
+                              ),
+                              actions: [
+                                TextButton(
+                                  child: Text('Cancel'),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                                TextButton(
+                                  child: Text('OK'),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => TargetMenu(
+                                          userKey: widget.userKey,
+                                          foodKey:
+                                              _querySnapshot!.docs[index].id,
+                                          fat: food['fat'],
+                                          carb: food['carb'],
+                                          pro: food['pro'],
+                                          kcal: food['Kcal'],
+                                          orderQuantity: orderQuantity,
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ],
+                            );
+                          },
+                        );
+                      }
+                    },
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
-

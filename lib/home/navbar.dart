@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 1;
 
   static final List<Widget> _widgetOptions = <Widget>[
-  FoodScreen(),
+  FoodScreen(userKey: 'userKey',),
   HomeScreen(userKey: 'userKey',),
   FitnessScreen(),
 ];
@@ -71,7 +71,6 @@ class _HomePageState extends State<HomePage> {
         icon: Icon(Icons.camera_alt),
         onPressed: () => _navigateToCamera(context),
       ),
-      
   ],
 ),
       body: Center(

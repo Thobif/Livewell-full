@@ -1,11 +1,9 @@
-
 class Menu {
   final String name;
   final int carbohydrate;
   final int protein;
   final int fat;
   final int calories;
-  
 
   Menu(
       {required this.name,
@@ -18,7 +16,11 @@ class Menu {
 class Restaurant {
   final String name;
   final List<Menu> menu;
-  
+  final String key;
 
-  Restaurant({required this.name, required this.menu ,   });
+  Restaurant({
+    required this.name,
+    required this.menu,
+    required this.key,
+  });
 }

@@ -11,6 +11,7 @@ Future<List<Restaurant>> fetchRestaurants() async {
       // imagePath: data['imagePath'] ?? '',
       name: data['shop_name'] ?? '',
       menu: [], // ควรดึงข้อมูลเมนูจาก Firestore ด้วยการใช้ฟังก์ชัน fetchMenus() และส่งค่าร้านค้าเป็นพารามิเตอร์
+      key:doc.id
     ));
   });
 

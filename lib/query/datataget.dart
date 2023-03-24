@@ -1,5 +1,3 @@
-
-import 'package:abc/home/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:abc/home/home.dart';
@@ -100,6 +98,8 @@ class _TargetPageState extends State<TargetPage> {
     int int_TG_fat = TG_fat.round();
     int int_TG_pro = TG_pro.round();
     DateTime currentDate = DateTime.now();
+    DateTime currentDateWithoutTime =
+        DateTime(currentDate.year, currentDate.month, currentDate.day);
 
     // Reference user document by userKey
     DocumentReference userRef =
@@ -111,7 +111,7 @@ class _TargetPageState extends State<TargetPage> {
       'TG_carb': int_TG_carb,
       'TG_fat': int_TG_fat,
       'TG_pro': int_TG_pro,
-      'date': currentDate,
+      'date': currentDateWithoutTime,
       'phone': userRef, // Save userRef in 'phone' field
     });
     CollectionReference result =
@@ -124,7 +124,7 @@ class _TargetPageState extends State<TargetPage> {
       'R_carb': R_carb,
       'R_fat': R_fat,
       'R_pro': R_pro,
-      'date': currentDate,
+      'date': currentDateWithoutTime,
       'phone': userRef, // Save userRef in 'phone' field
       'food_ID': null,
       'quantity': null,
@@ -134,7 +134,7 @@ class _TargetPageState extends State<TargetPage> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-          builder: (context) => HomePage(userKey: widget.userKey,)),
+          builder: (context) => HomeScreen(userKey: widget.userKey)),
     );
   }
 

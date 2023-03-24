@@ -4,11 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 
-
-
 class Classify extends StatelessWidget {
   final String userKey;
   Classify({required this.userKey});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,12 +15,21 @@ class Classify extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       home: Scaffold(
-        appBar: AppBar(title: const Text('Send Image Example')),
+        appBar: AppBar(
+          title: const Text('ตรวจจับอาหาร'),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+        ),
         body: Center(child: SendImageButton()),
       ),
     );
   }
 }
+
 
 class SendImageButton extends StatefulWidget {
   @override
@@ -38,6 +46,7 @@ class _SendImageButtonState extends State<SendImageButton> {
     if (imageFile == null) {
       return;
     }
+    
 
     // Create a MultipartRequest with "POST" method
     final url = Uri.parse('http://10.0.2.2:5000/');
@@ -153,7 +162,7 @@ class _SendImageButtonState extends State<SendImageButton> {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: _sendImage,
-      child: const Text('Send Image'),
+       child: Icon(Icons.image),
     );
   }
 }

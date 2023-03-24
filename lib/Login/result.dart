@@ -1,11 +1,11 @@
-
 import 'package:abc/home/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-
+import 'package:abc/home/home.dart';
 
 class ResultPageWidget extends StatefulWidget {
   final String userKey;
+
   ResultPageWidget({required this.userKey});
 
   @override
@@ -117,7 +117,7 @@ class _ResultPageWidgetState extends State<ResultPageWidget> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-          builder: (context) => HomePage(userKey: widget.userKey,)),
+          builder: (context) => HomeScreen(userKey: widget.userKey)),
     );
     return;
   }
@@ -152,7 +152,7 @@ await result.add({
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-          builder: (context) => HomePage(userKey: widget.userKey,)),
+          builder: (context) => HomePage(userKey: widget.userKey)),
     );
   }
 

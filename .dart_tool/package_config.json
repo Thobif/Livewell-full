@@ -38,6 +38,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "checked_yaml",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/checked_yaml-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "cli_util",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/cli_util-0.3.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/clock-1.1.1",
       "packageUri": "lib/",
@@ -194,6 +206,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_launcher_icons-0.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.1",
       "packageUri": "lib/",
@@ -254,6 +272,24 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "google_api_availability",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/google_api_availability-5.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "google_api_availability_android",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/google_api_availability_android-1.0.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "google_api_availability_platform_interface",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/google_api_availability_platform_interface-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "google_maps_flutter",
       "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/google_maps_flutter-2.2.5",
       "packageUri": "lib/",
@@ -297,7 +333,7 @@
     },
     {
       "name": "image",
-      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/image-3.3.0",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.0.15",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
@@ -342,6 +378,12 @@
       "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.5",
       "packageUri": "lib/",
       "languageVersion": "2.16"
+    },
+    {
+      "name": "json_annotation",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/json_annotation-4.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "lints",
@@ -680,6 +722,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/yaml-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "youtube_player_flutter",
       "rootUri": "file:///C:/Users/jiray/AppData/Local/Pub/Cache/hosted/pub.dev/youtube_player_flutter-8.1.2",
       "packageUri": "lib/",
@@ -704,7 +752,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-03-24T07:45:38.681614Z",
+  "generated": "2023-03-25T02:54:57.436184Z",
   "generator": "pub",
   "generatorVersion": "2.19.4"
 }

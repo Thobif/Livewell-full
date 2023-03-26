@@ -1,3 +1,5 @@
+import 'package:abc/cameara/camera.dart';
+import 'package:abc/fitness/fitnesspage.dart';
 import 'package:abc/food/food_screen.dart';
 import 'package:abc/menu/menudetail.dart';
 import 'package:flutter/material.dart';
@@ -123,6 +125,24 @@ class _HomePageState extends State<HomeScreen> {
     );
   }
 
+  void _navigateToFood(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => FoodScreen(userKey: widget.userKey),
+      ),
+    );
+  }
+
+  void _navigateToFitness(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => FitnessScreen(userKey: widget.userKey),
+      ),
+    );
+  }
+
   void _navigateToHistoryPage(BuildContext context) {
     DateTime currentDate = DateTime.now();
     DateTime previousDate = currentDate.subtract(Duration(days: 1));
@@ -143,7 +163,25 @@ class _HomePageState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("HomePageTest"),),
+        appBar: AppBar(
+  title: Text('LiveWell'),
+  backgroundColor: Colors.green,
+  actions: [
+
+    IconButton(
+      icon: Icon(Icons.account_circle),
+      onPressed: () => _navigateToProfile(context),
+    ),
+      IconButton(
+        icon: Icon(Icons.restaurant_menu),
+        onPressed: () => _navigateToFood(context),
+      ),
+       IconButton(
+        icon: Icon(Icons.fitness_center),
+        onPressed: () => _navigateToFitness(context),
+      ),
+  ],
+),
       body: Column(
         
         children: [
@@ -206,6 +244,7 @@ class _HomePageState extends State<HomeScreen> {
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
+                        
                       ),
                     ],
                   ),
@@ -284,21 +323,6 @@ class _HomePageState extends State<HomeScreen> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => FoodScreen(
-                userKey: widget.userKey,
-              ),
-            ),
-          );
-        },
-        child: Icon(Icons.add),
-        backgroundColor: Colors.green,
-      ),
-      
     );
   }
 }

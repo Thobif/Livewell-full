@@ -15,7 +15,7 @@ import 'exer.dart';
 // }
 
 class FitnessScreen extends StatefulWidget {
-  FitnessScreen({Key? key, }) : super(key: key);
+  FitnessScreen({Key? key, required String userKey, }) : super(key: key);
 
  
 
@@ -112,6 +112,10 @@ class _FitnessScreenState extends State<FitnessScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+  title: Text('Fitness'),
+  backgroundColor: Colors.green,
+),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0),

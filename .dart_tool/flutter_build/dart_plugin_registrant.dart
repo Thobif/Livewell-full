@@ -6,6 +6,7 @@
 // @dart = 2.18
 
 import 'dart:io'; // flutter_ignore: dart_io_import.
+import 'package:google_api_availability_android/google_api_availability_android.dart';
 import 'package:google_maps_flutter_android/google_maps_flutter_android.dart';
 import 'package:image_picker_android/image_picker_android.dart';
 import 'package:path_provider_android/path_provider_android.dart';
@@ -29,6 +30,16 @@ class _PluginRegistrant {
   @pragma('vm:entry-point')
   static void register() {
     if (Platform.isAndroid) {
+      try {
+        GoogleApiAvailabilityAndroid.registerWith();
+      } catch (err) {
+        print(
+          '`google_api_availability_android` threw an error: $err. '
+          'The app may not function as expected until you remove this plugin from pubspec.yaml'
+        );
+        rethrow;
+      }
+
       try {
         GoogleMapsFlutterAndroid.registerWith();
       } catch (err) {

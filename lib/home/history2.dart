@@ -1,4 +1,8 @@
+import 'package:abc/cameara/camera.dart';
+import 'package:abc/fitness/fitnesspage.dart';
 import 'package:abc/food/food_screen.dart';
+import 'package:abc/home/home.dart';
+import 'package:abc/home/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:abc/Edit/profile.dart';
 import 'dart:math';
@@ -137,15 +141,7 @@ class _HistoryPage2State extends State<HistoryPage2> {
     PS_pro = R_pro / TG_pro;
   }
 
-  void _navigateToProfile(BuildContext context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => ProfilePage(userKey: widget.userKey),
-      ),
-    );
-  }
-
+ 
   void _navigateToHistoryPage2(BuildContext context) {
     DateTime currentDate = widget.currentDateWithoutTime;
     DateTime previousDate = currentDate.subtract(Duration(days: 1));
@@ -187,6 +183,34 @@ class _HistoryPage2State extends State<HistoryPage2> {
 
     return inputDateWithoutTime == todayWithoutTime;
   }
+   void _navigateToProfile(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ProfilePage(userKey: widget.userKey),
+      ),
+    );
+  }
+
+  void _navigateToFood(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => FoodScreen(userKey: widget.userKey),
+      ),
+    );
+  }
+
+  void _navigateToFitness(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => FitnessScreen(userKey: widget.userKey),
+      ),
+    );
+  }
+
+  
 
   Future<bool> checkPreviousDateData() async {
     DateTime previousDate =
@@ -210,17 +234,27 @@ class _HistoryPage2State extends State<HistoryPage2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Home'),
-          backgroundColor: Colors.green,
-          actions: [
-            IconButton(
-              icon: Icon(Icons.account_circle),
-              onPressed: () => _navigateToProfile(context),
-            ),
-          ],
-          automaticallyImplyLeading: false,
-        ),
+         appBar: AppBar(
+  title: Text('LiveWell'),
+  backgroundColor: Colors.green,
+  actions: [
+
+    IconButton(
+      icon: Icon(Icons.account_circle),
+      onPressed: () => _navigateToProfile(context),
+    ),
+    IconButton(
+        icon: Icon(Icons.restaurant_menu),
+        onPressed: () => _navigateToFood(context),
+      ),
+       IconButton(
+        icon: Icon(Icons.fitness_center),
+        onPressed: () => _navigateToFitness(context),
+      ),
+      
+  ],
+),
+   
         body: Column(
           children: [
             Padding(
@@ -369,20 +403,7 @@ class _HistoryPage2State extends State<HistoryPage2> {
             ),
           ],
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => FoodScreen(
-                  userKey: widget.userKey,
-                ),
-              ),
-            );
-          },
-          child: Icon(Icons.add),
-          backgroundColor: Colors.green,
-        ));
+      );
   }
 }
 

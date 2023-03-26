@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.abc">
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
    <application
-        android:label="abc"
+        android:label="LiveWell"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"                

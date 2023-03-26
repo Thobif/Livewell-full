@@ -1,11 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:abc/cameara/addfoodcamera.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 
 class Classify extends StatelessWidget {
   final String userKey;
+
   Classify({required this.userKey});
 
   @override
@@ -24,14 +26,20 @@ class Classify extends StatelessWidget {
             },
           ),
         ),
-        body: Center(child: SendImageButton()),
+        body: Center(
+            child: SendImageButton(
+          userKey: userKey,
+        )),
       ),
     );
   }
 }
 
-
 class SendImageButton extends StatefulWidget {
+  final String userKey;
+
+  SendImageButton({required this.userKey});
+
   @override
   _SendImageButtonState createState() => _SendImageButtonState();
 }
@@ -46,7 +54,6 @@ class _SendImageButtonState extends State<SendImageButton> {
     if (imageFile == null) {
       return;
     }
-    
 
     // Create a MultipartRequest with "POST" method
     final url = Uri.parse('http://10.0.2.2:5000/');
@@ -103,6 +110,17 @@ class _SendImageButtonState extends State<SendImageButton> {
                                         child: const Text('ยืนยัน'),
                                         onPressed: () {
                                           Navigator.of(context).pop();
+                                          Navigator.of(context).pop();
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  AddFoodCamera(
+                                                userKey: widget.userKey,
+                                                menuName: result.toString(),
+                                              ),
+                                            ),
+                                          );
                                         },
                                         style: TextButton.styleFrom(
                                           primary: Colors.green,
@@ -162,7 +180,7 @@ class _SendImageButtonState extends State<SendImageButton> {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: _sendImage,
-       child: Icon(Icons.image),
+      child: Icon(Icons.image),
     );
   }
 }

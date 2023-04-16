@@ -21,7 +21,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color_abc_secondary_text_material_dark.xml.flat",
@@ -29,7 +29,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_icon_light_focused.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color-v23_abc_tint_seek_thumb.xml.flat",
@@ -69,7 +69,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\layout_abc_list_menu_item_radio.xml.flat",
@@ -77,7 +77,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -97,7 +97,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_abc_star_half_black_48dp.xml.flat",
@@ -113,7 +113,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -153,7 +153,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\xml_image_share_filepaths.xml.flat",
@@ -201,7 +201,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_corner.xml.flat",
@@ -289,7 +289,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -301,11 +301,11 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_text_light.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\layout_floating_action_mode_item.xml.flat",
@@ -325,7 +325,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_icon_disabled.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
@@ -353,7 +353,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\layout_abc_popup_menu_item_layout.xml.flat",
@@ -369,7 +369,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\layout_abc_popup_menu_header_item_layout.xml.flat",
@@ -377,7 +377,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\anim_btn_radio_to_off_mtrl_ring_outer_path_animation.xml.flat",
@@ -393,7 +393,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color_common_google_signin_btn_text_light.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\color\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -541,7 +541,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\animator_fragment_fade_enter.xml.flat",
@@ -557,7 +557,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -597,7 +597,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_btn_checkbox_unchecked_to_checked_mtrl_animation.xml.flat",
@@ -637,7 +637,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_text_dark_focused.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -669,7 +669,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -741,7 +741,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -761,7 +761,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-v21_abc_edit_text_material.xml.flat",
@@ -781,7 +781,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_text_dark.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -789,7 +789,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color_abc_primary_text_material_light.xml.flat",
@@ -885,7 +885,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_icon_light_normal.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_abc_seekbar_thumb_material.xml.flat",
@@ -909,7 +909,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color_common_google_signin_btn_text_dark.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -969,7 +969,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_icon_dark.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1057,7 +1057,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color_abc_search_url_text.xml.flat",
@@ -1073,11 +1073,11 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color_common_google_signin_btn_tint.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\color\\common_google_signin_btn_tint.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color-v23_abc_tint_switch_track.xml.flat",
@@ -1209,7 +1209,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1261,7 +1261,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color_abc_background_cache_hint_selector_material_light.xml.flat",
@@ -1273,7 +1273,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -1281,7 +1281,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1289,7 +1289,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_abc_list_selector_holo_dark.xml.flat",
@@ -1297,7 +1297,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\anim_btn_checkbox_to_checked_box_outer_merged_animation.xml.flat",
@@ -1377,7 +1377,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\mipmap-hdpi_ic_launcher.png.flat",
@@ -1485,7 +1485,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_icon_light.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl.png.flat",
@@ -1517,7 +1517,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_text_dark_normal.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\color_abc_tint_default.xml.flat",
@@ -1569,11 +1569,11 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_text_light_normal.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_notification_bg.xml.flat",
@@ -1605,7 +1605,7 @@
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable_common_google_signin_btn_text_disabled.xml.flat",
-        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\27ed75583d8888cfd149af38bb71ea35\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+        "source": "C:\\Users\\jiray\\.gradle\\caches\\transforms-3\\0861465e27f550a84b471cca91b81f1b\\transformed\\jetified-play-services-base-18.1.0\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "C:\\fluttertest\\live_well\\build\\app\\intermediates\\merged_res\\release\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",

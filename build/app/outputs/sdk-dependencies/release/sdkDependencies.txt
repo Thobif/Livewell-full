@@ -512,10 +512,10 @@ library {
   maven_library {
     groupId: "com.google.android.gms"
     artifactId: "play-services-base"
-    version: "18.0.1"
+    version: "18.1.0"
   }
   digests {
-    sha256: "(\226\327oC+\345!g)[\271\316E\255\342\\1\n\357\374\004\322\214\370\333j\025\206\216\203\336"
+    sha256: "N\312V\316\354\3242Z7l\330C\257V7~#v\316(M\fo\005\245\320\250/L\033\370\315"
   }
   repo_index {
   }
@@ -1193,7 +1193,7 @@ library {
 }
 library {
   digests {
-    sha256: "\317\323Z\316O\223>Nu\2677\272#s}1\355?\022\377H\rC\243\177\022\tr\266>\311 "
+    sha256: "\376<\371\026\033\247@O\177\3009\321\302\335\024b\214\277\310+M\271\334\240\035\002\360\374X#W\004"
   }
 }
 library_dependencies {
@@ -1727,6 +1727,7 @@ module_dependencies {
   module_name: "base"
   dependency_index: 37
   dependency_index: 0
+  dependency_index: 12
   dependency_index: 94
   dependency_index: 95
   dependency_index: 96
@@ -1734,6 +1735,7 @@ module_dependencies {
   dependency_index: 5
   dependency_index: 72
   dependency_index: 41
+  dependency_index: 42
   dependency_index: 36
   dependency_index: 75
   dependency_index: 70
@@ -1763,6 +1765,16 @@ repositories {
 repositories {
   maven_repo {
     url: "https://storage.googleapis.com/download.flutter.io"
+  }
+}
+repositories {
+  maven_repo {
+    url: "https://dl.google.com/dl/android/maven2/"
+  }
+}
+repositories {
+  maven_repo {
+    url: "https://repo.maven.apache.org/maven2/"
   }
 }
 repositories {

@@ -7381,6 +7381,35 @@ androidx.webkit.internal.WebkitToCompatConverter:
     public androidx.webkit.internal.WebSettingsAdapter convertSettings(android.webkit.WebSettings)
     public androidx.webkit.internal.WebResourceRequestAdapter convertWebResourceRequest(android.webkit.WebResourceRequest)
 androidx.webkit.internal.package-info
+com.baseflow.googleapiavailability.BuildConfig
+com.baseflow.googleapiavailability.GoogleApiAvailabilityConstants$GooglePlayServicesAvailability
+com.baseflow.googleapiavailability.GoogleApiAvailabilityConstants:
+    static final int GOOGLE_PLAY_SERVICES_AVAILABILITY_NOT_AVAILABLE_ON_PLATFORM
+    static final int GOOGLE_PLAY_SERVICES_AVAILABILITY_SERVICE_DISABLED
+    static final int GOOGLE_PLAY_SERVICES_AVAILABILITY_SERVICE_INVALID
+    static final int GOOGLE_PLAY_SERVICES_AVAILABILITY_SERVICE_MISSING
+    static final int GOOGLE_PLAY_SERVICES_AVAILABILITY_SERVICE_UPDATING
+    static final int GOOGLE_PLAY_SERVICES_AVAILABILITY_SERVICE_VERSION_UPDATE_REQUIRED
+    static final int GOOGLE_PLAY_SERVICES_AVAILABILITY_SUCCESS
+    static final int GOOGLE_PLAY_SERVICES_AVAILABILITY_UNKNOWN
+    static final java.lang.String LOG_TAG
+    static final int REQUEST_GOOGLE_PLAY_SERVICES
+    void <init>()
+com.baseflow.googleapiavailability.GoogleApiAvailabilityPlugin$1
+com.baseflow.googleapiavailability.GoogleApiAvailabilityPlugin:
+    static synthetic void access$000(com.baseflow.googleapiavailability.GoogleApiAvailabilityPlugin)
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+com.baseflow.googleapiavailability.R$attr
+com.baseflow.googleapiavailability.R$color
+com.baseflow.googleapiavailability.R$dimen
+com.baseflow.googleapiavailability.R$drawable
+com.baseflow.googleapiavailability.R$id
+com.baseflow.googleapiavailability.R$integer
+com.baseflow.googleapiavailability.R$layout
+com.baseflow.googleapiavailability.R$string
+com.baseflow.googleapiavailability.R$style
+com.baseflow.googleapiavailability.R$styleable
+com.baseflow.googleapiavailability.R
 com.baseflow.permissionhandler.BuildConfig
 com.baseflow.permissionhandler.PermissionConstants$PermissionGroup
 com.baseflow.permissionhandler.PermissionConstants$PermissionStatus
@@ -7810,9 +7839,7 @@ com.google.android.gms.common.GoogleApiAvailability:
     public android.app.Dialog getErrorDialog(android.app.Activity,int,int)
     public android.app.Dialog getErrorDialog(androidx.fragment.app.Fragment,int,int)
     public android.app.Dialog getErrorDialog(androidx.fragment.app.Fragment,int,int,android.content.DialogInterface$OnCancelListener)
-    public com.google.android.gms.tasks.Task makeGooglePlayServicesAvailable(android.app.Activity)
     public void setDefaultNotificationChannelId(android.content.Context,java.lang.String)
-    public boolean showErrorDialogFragment(android.app.Activity,int,int)
     public void showErrorNotification(android.content.Context,com.google.android.gms.common.ConnectionResult)
     public static final varargs com.google.android.gms.tasks.Task zai(com.google.android.gms.common.api.HasApiKey,com.google.android.gms.common.api.HasApiKey[])
 com.google.android.gms.common.GoogleApiAvailabilityLight:
@@ -7992,6 +8019,7 @@ com.google.android.gms.common.api.GoogleApiClient:
     public void zap(com.google.android.gms.common.api.internal.zada)
     static synthetic bridge java.util.Set zaq()
 com.google.android.gms.common.api.HasApiKey
+com.google.android.gms.common.api.OptionalModuleApi
 com.google.android.gms.common.api.OptionalPendingResult
 com.google.android.gms.common.api.PendingResult:
     public abstract com.google.android.gms.common.api.Result await()
@@ -8175,7 +8203,6 @@ com.google.android.gms.common.api.internal.zaby
 com.google.android.gms.common.api.internal.zabz
 com.google.android.gms.common.api.internal.zaca
 com.google.android.gms.common.api.internal.zacb
-com.google.android.gms.common.api.internal.zacc
 com.google.android.gms.common.api.internal.zaci:
     public void <init>(com.google.android.gms.common.api.internal.RegisterListenerMethod,com.google.android.gms.common.api.internal.UnregisterListenerMethod,java.lang.Runnable)
 com.google.android.gms.common.api.internal.zacj
@@ -8563,6 +8590,53 @@ com.google.android.gms.common.internal.zzy:
 com.google.android.gms.common.logging.Logger:
     public java.lang.String getTag()
     public varargs void v(java.lang.String,java.lang.Throwable,java.lang.Object[])
+com.google.android.gms.common.moduleinstall.InstallStatusListener
+com.google.android.gms.common.moduleinstall.ModuleAvailabilityResponse$AvailabilityStatus
+com.google.android.gms.common.moduleinstall.ModuleAvailabilityResponse
+com.google.android.gms.common.moduleinstall.ModuleInstall
+com.google.android.gms.common.moduleinstall.ModuleInstallClient
+com.google.android.gms.common.moduleinstall.ModuleInstallIntentResponse
+com.google.android.gms.common.moduleinstall.ModuleInstallRequest$Builder
+com.google.android.gms.common.moduleinstall.ModuleInstallRequest
+com.google.android.gms.common.moduleinstall.ModuleInstallResponse
+com.google.android.gms.common.moduleinstall.ModuleInstallStatusCodes
+com.google.android.gms.common.moduleinstall.ModuleInstallStatusUpdate$InstallState
+com.google.android.gms.common.moduleinstall.ModuleInstallStatusUpdate$ProgressInfo
+com.google.android.gms.common.moduleinstall.ModuleInstallStatusUpdate
+com.google.android.gms.common.moduleinstall.internal.ApiFeatureRequest
+com.google.android.gms.common.moduleinstall.internal.zaa
+com.google.android.gms.common.moduleinstall.internal.zaaa
+com.google.android.gms.common.moduleinstall.internal.zaab
+com.google.android.gms.common.moduleinstall.internal.zab
+com.google.android.gms.common.moduleinstall.internal.zac
+com.google.android.gms.common.moduleinstall.internal.zad
+com.google.android.gms.common.moduleinstall.internal.zae
+com.google.android.gms.common.moduleinstall.internal.zaf
+com.google.android.gms.common.moduleinstall.internal.zag
+com.google.android.gms.common.moduleinstall.internal.zah
+com.google.android.gms.common.moduleinstall.internal.zai
+com.google.android.gms.common.moduleinstall.internal.zaj
+com.google.android.gms.common.moduleinstall.internal.zak
+com.google.android.gms.common.moduleinstall.internal.zal
+com.google.android.gms.common.moduleinstall.internal.zam
+com.google.android.gms.common.moduleinstall.internal.zan
+com.google.android.gms.common.moduleinstall.internal.zao
+com.google.android.gms.common.moduleinstall.internal.zap
+com.google.android.gms.common.moduleinstall.internal.zaq
+com.google.android.gms.common.moduleinstall.internal.zar
+com.google.android.gms.common.moduleinstall.internal.zas
+com.google.android.gms.common.moduleinstall.internal.zat
+com.google.android.gms.common.moduleinstall.internal.zau
+com.google.android.gms.common.moduleinstall.internal.zav
+com.google.android.gms.common.moduleinstall.internal.zaw
+com.google.android.gms.common.moduleinstall.internal.zax
+com.google.android.gms.common.moduleinstall.internal.zay
+com.google.android.gms.common.moduleinstall.internal.zaz
+com.google.android.gms.common.moduleinstall.zaa
+com.google.android.gms.common.moduleinstall.zab
+com.google.android.gms.common.moduleinstall.zac
+com.google.android.gms.common.moduleinstall.zad
+com.google.android.gms.common.moduleinstall.zae
 com.google.android.gms.common.providers.PooledExecutorsProvider$PooledExecutorFactory
 com.google.android.gms.common.providers.PooledExecutorsProvider
 com.google.android.gms.common.providers.zza
@@ -9270,20 +9344,21 @@ com.google.android.gms.internal.auth.zzz
 com.google.android.gms.internal.base.zaa:
     protected final android.os.Parcel zab(int,android.os.Parcel)
 com.google.android.gms.internal.base.zac:
-    public static void zab(android.os.Parcel,boolean)
-com.google.android.gms.internal.base.zae
-com.google.android.gms.internal.base.zaf
+    public static void zac(android.os.Parcel,boolean)
 com.google.android.gms.internal.base.zag
 com.google.android.gms.internal.base.zah
 com.google.android.gms.internal.base.zai
 com.google.android.gms.internal.base.zaj
 com.google.android.gms.internal.base.zak
+com.google.android.gms.internal.base.zal
 com.google.android.gms.internal.base.zam
-com.google.android.gms.internal.base.zan
-com.google.android.gms.internal.base.zao
-com.google.android.gms.internal.base.zap
-com.google.android.gms.internal.base.zaq:
+com.google.android.gms.internal.base.zaq
+com.google.android.gms.internal.base.zar
+com.google.android.gms.internal.base.zas
+com.google.android.gms.internal.base.zat
+com.google.android.gms.internal.base.zau:
     public void <init>()
+com.google.android.gms.internal.base.zav
 com.google.android.gms.internal.common.zza:
     protected final void zzC(int,android.os.Parcel)
     protected final void zzD(int,android.os.Parcel)

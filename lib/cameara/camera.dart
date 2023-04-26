@@ -179,8 +179,22 @@ class _SendImageButtonState extends State<SendImageButton> {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: _sendImage,
-      child: Icon(Icons.image),
-    );
+  onPressed: _sendImage,
+  child: Padding(
+    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(Icons.image, size: 18),
+        SizedBox(width: 4),
+        Text('เลือกรูปภาพ', style: TextStyle(fontSize: 14)),
+      ],
+    ),
+  ),
+  style: ElevatedButton.styleFrom(
+    padding: EdgeInsets.all(0),
+  ),
+);
   }
 }
